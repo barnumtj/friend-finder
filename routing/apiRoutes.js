@@ -19,6 +19,7 @@ app.post('/api/friends', function(req, res){
     res.send(JSON.stringify(userInfo))
 
 // compare userinfo against friendslist, math abs
+// { name, photo, scores } = req.body
 });
 
 }
