@@ -1,7 +1,7 @@
 let friends =
                [ {
                 "name":"Ahmed",
-                "photo":"/Users/kaceehiggins/Documents/BootCamp/FriendFinder/app/friend-finder/data/images/tannerfarmer.jpg",
+                "photo":"./images/Ahmed.jpg",
                 "scores":[
                     5,
                     1,
@@ -16,7 +16,7 @@ let friends =
                 ]
             }, {
                 "name": "Tanner",
-                "Photo": "https://www.omaha.com/huskers/football/tanner-farmer-believes-he-can-lift-pounds-and-win-a/article_5f70d460-180b-5727-9dcf-28fa912cf7bd.html",
+                "photo": "./images/lebron.png",
                 "scores":[
                     5,
                     2,
@@ -32,7 +32,7 @@ let friends =
             },
             {
                 "name": "LeBron",
-                "Photo": "",
+                "photo": "./images/lebron.png",
                 "scores":[
                     1,
                     3,
@@ -48,7 +48,7 @@ let friends =
             },
             {
                 "name": "Patrick Mahomes",
-                "Photo": "",
+                "photo": "./images/patty.jpg",
                 "scores":[
                     1,
                     5,
@@ -64,7 +64,7 @@ let friends =
             },
             {
                 "name": "Tyreek Hill",
-                "Photo": "",
+                "photo": "./images/cheetah.jpeg",
                 "scores":[
                     1,
                     1,

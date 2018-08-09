@@ -157,7 +157,6 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -188,11 +187,12 @@
 
             // AJAX post the data to the friends API.
             $.post("/api/friends", userInfo, function (data) {
-                // console.log(data)
+                console.log(data)
 
                 $("#bestFriendName").text(data.name);
-                $("#bestFriendPhoto").attr("src", data.photo);
+                $("#bestFriendPhoto").attr({src: data.photo});
                 $('.modal').modal('show');
+                
 
                 // data.name & data.photo
             });
