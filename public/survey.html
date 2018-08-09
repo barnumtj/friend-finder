@@ -140,7 +140,28 @@
         </div>
 
         <buttontype="button" id="submitbtn" class="btn btn-primary" style="margin-top: 2rem">Submit</button>
-    </div>
+ </div>
+
+ <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your best friend is....</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1 id="bestFriendName"></h1>
+              <img style="height: 200px; width: 200px" id="bestFriendPhoto"></img>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 
@@ -150,8 +171,8 @@
                 name: $('#userName').val(),
                 photo: $('#userPhoto').val(),
                 scores: [
-                    $('#q1').val(),
-                    $('#q2').val(),
+                    parseInt($('#q1').val()),
+                    parseInt($('#q2').val()),
                     $('#q3').val(),
                     $('#q4').val(),
                     $('#q5').val(),
@@ -164,14 +185,20 @@
 
             };
 
-         
-        // AJAX post the data to the friends API.
-        $.post("/api/friends", userInfo, function(data) {
-               console.log(data)
-    });
-});
 
-       
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userInfo, function (data) {
+                // console.log(data)
+
+                $("#bestFriendName").text(data.name);
+                $("#bestFriendPhoto").attr("src", data.photo);
+                $('.modal').modal('show');
+
+                // data.name & data.photo
+            });
+        });
+
+
 
 
 
