@@ -1,6 +1,5 @@
 var express = require("express");
 var friendslist = require('../data/friends.js')
-
 let route = express.Router()
 
 
@@ -14,13 +13,6 @@ route.post('/friends', function(req, res){
 
 	// setting a variable for the user's response
     var userInfo = req.body;
-    // var userParse = JSON.parse(userInfo)
-    // console.log(userInfo.name)
-    // res.send(userInfo)
-  
-   
-
-
     let bestFriend = compareUser(userInfo)
     console.log(bestFriend)
     friendslist.push(userInfo);
@@ -34,8 +26,6 @@ route.post('/friends', function(req, res){
 
 function compareUser(user) {
     let bestScore = 1000;
-    let bestFriend;
-    
     let userScore = 0
     let friendsArray = []
     for (let i = 0; i < user.scores.length; i++) {
