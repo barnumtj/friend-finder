@@ -16,7 +16,7 @@ let friends =
                 ]
             }, {
                 "name": "Tanner",
-                "photo": "./images/lebron.png",
+                "photo": "./images/tanner.png",
                 "scores":[
                     5,
                     2,
