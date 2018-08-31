@@ -1,5 +1,3 @@
-# friend-finder
-
 # FriendFinder-app
 FriendFinder is a full stack compatibility based web application that uses the results from user surveys to compare answers to the other user results and then displays the name and picture of the user with best overall match.
 
