@@ -1,9 +1,9 @@
 # friend-finder
 
-FriendFinder-app
+# FriendFinder-app
 FriendFinder is a full stack compatibility based web application that uses the results from user surveys to compare answers to the other user results and then displays the name and picture of the user with best overall match.
 
-Technologies used
+# Technologies used
 node.js
 express
 Getting Started
@@ -16,7 +16,7 @@ Clone or fork this repo:
 
 https://github.com/barnumtj/friend-finder
 
-Run the app:
+# Run the app:
 
 node server
 You can now navigate to 'localhost:8080/' to access FriendFinder.
@@ -26,7 +26,7 @@ Visual Studio Code
 Features
 Customer view alt tag
 
-Authors
+# Authors
 
 Tanner Barnum
 
