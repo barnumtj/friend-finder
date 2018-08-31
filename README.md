@@ -14,7 +14,8 @@ What to install and how for local development and testing purposes
 - run: npm install --> to install all the dependencies
 Clone or fork this repo:
 
-https://github.com/georgejincy/FriendFinder-app.git
+https://github.com/barnumtj/friend-finder
+
 Run the app:
 
 node server
